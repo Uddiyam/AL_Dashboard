@@ -1,0 +1,79 @@
+.box {
+    display: inline-block;
+    width: 403px;
+    padding-right: 20px;
+    padding-top: 10px;
+    vertical-align: top;
+  }
+.btn{
+  text-align:center;
+  width:82%;
+  height: 3em;
+}
+.grap {
+    width: 350px;
+    height: 450px;
+    display: inline-block;
+    margin-left: -30px;
+  }
+  .grap_wrap{
+    height: 440px;
+  }
+
+.days{
+float:left;
+width: 540px;
+margin-left: 0;
+}
+
+.time{
+  margin-top: 20px;
+  margin-left: 1060px;
+}
+
+ .LL{
+  width: 450px;
+  height: 280px;
+ }
+
+ .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+svg {
+  font-family: Sans-Serif, Arial;
+}
+.line {
+  stroke-width: 2;
+  fill: none;
+}
+
+.axis path {
+  stroke: black;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.title-text {
+  font-size: 15px;
+}
+
+#chart{
+  float: left;
+  width: 743px;
+  padding-left: 1%;
+
+}
+
+#Before_After{
+ display: flex;
+ padding-left: 3px;
+}
+
+#Before_After1{
+  display: flex;
+  margin-left: -20px;
+}

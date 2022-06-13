@@ -1,0 +1,14 @@
+#seoul:hover,#jeju:hover, #busan:hover, #incheon:hover, #daegu:hover, #gangwon:hover, #gyeonggi:hover{
+    fill: goldenrod;
+}
+
+
+.svg{
+    height: 700px;
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 5px;
+    stroke: black;
+    float: left;
+}
+
