@@ -1,110 +1,110 @@
 import React, { useState, useEffect, useRef } from "react";
-import {Graph} from "./LineChart";
+import {GraphDaeguBefore} from "./LineChart";
 
-export default function Line() {
-  const [colors, setColors]=useState(['gray','blue']);
+export default function App() {
+  const [colors, setColors]=useState(['red','gray']);
   const data1 = [
     {
       name: "1",
-      value: 180
+      value: 166
     },
     {
       name: "2",
-      value: 189
+      value: 179
     },
     {
       name: "3",
-      value: 186
+      value: 170
     },
     {
       name: "4",
-      value: 168
+      value: 159
     },
     {
       name: "5",
-      value: 173
+      value: 160
     },
     {
       name: "6",
-      value: 182
+      value: 159
     },
     {
       name: "7",
-      value: 187
+      value: 168
     },
     {
       name: "8",
-      value: 190
+      value: 164
     },
     {
       name: "9",
-      value: 187
+      value: 174
     },
     {
       name: "10",
-      value: 180
+      value: 157
     },
 
     {
       name: "11",
-      value: 177
+      value: 158
     },
 
     {
       name: "12",
-      value: 171
+      value: 164
     },
   ];
   const data2 = [
     {
       name: "1",
-      value: 195
+      value: 175
     },
     {
       name: "2",
-      value: 187
+      value: 180
     },
     {
       name: "3",
-      value: 181
+      value: 169
     },
     {
       name: "4",
-      value: 168
+      value: 161
     },
     {
       name: "5",
-      value: 172
+      value: 163
     },
     {
       name: "6",
-      value: 170
+      value: 161
     },
     {
       name: "7",
-      value: 180
+      value: 166
     },
     {
       name: "8",
-      value: 180
+      value: 170
     },
     {
       name: "9",
-      value: 182
+      value: 174
     },
     {
       name: "10",
-      value: 171
+      value: 161
     },
 
     {
       name: "11",
-      value: 173
+      value: 162
     },
 
     {
       name: "12",
-      value: 178
+      value: 169
     },
   ];
 
@@ -117,9 +117,7 @@ export default function Line() {
   return (
     <div className="Line_Wrap">
       <h3>체류시간</h3>
-      <div style={{color:colors[0], fontSize:'5px'}}><button onClick={prev}>-</button>코로나 전</div>
-      <div style={{color:colors[1], fontSize:'5px'}}><button onClick={next}>-</button>코로나 후</div>
-      <Graph colors={colors} data1={data1} data2={data2}/>
+      <GraphDaeguBefore colors={colors} data1={data1} data2={data2}/>
     </div>
   );
 }

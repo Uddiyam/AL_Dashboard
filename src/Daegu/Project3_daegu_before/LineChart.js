@@ -10,7 +10,7 @@ import {
   max
 } from "d3";
 
-export const Graph = ({ colors, data1, data2}) => {
+export const GraphDaeguBefore = ({ colors, data1, data2}) => {
 
   const svgRef = useRef();
   const wrapperRef = useRef();
@@ -76,7 +76,7 @@ export const Graph = ({ colors, data1, data2}) => {
         ref={wrapperRef}
         style={{ width: "110%", height: "110%"}}
       >
-        <svg className="LL"ref={svgRef}>
+        <svg className="LL" ref={svgRef}>
         </svg>
       </div>
       </>

@@ -25,8 +25,6 @@ function SeoulBeforeTable() {
     <>
     <div>
       <h3 align= "center">서울 관광지 검색순위(코로나 전)</h3>
-    </div>
-    <div>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 500 }} aria-label="simple table">
           <TableHead>

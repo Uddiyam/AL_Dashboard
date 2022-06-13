@@ -1,7 +1,7 @@
 import SeoulSearch2 from "./after/search/SeoulSearch2";
 import SeoulVisit2 from "./after/visit/SeoulVisit2";
 import "../../grap.css";
-import SeoulAfterTable from "../table/after/SeoulAfterTable";
+import SeoulBar_After from "../../BarChart/SeoulBar_After";
 
 export default function SeoulTotal2() {
   return (
@@ -13,7 +13,7 @@ export default function SeoulTotal2() {
         <SeoulVisit2 />
       </div>
       <div className="box">
-        <SeoulAfterTable />
+        <SeoulBar_After />
       </div>
     </>
   );

@@ -22,10 +22,8 @@ const rows = [
 function CountryAfterTable() {
   return (
     <>
-    <div>
+    <div className='table_korea'>
       <h3 align= "center">전국 관광지 검색순위(코로나 후)</h3>
-    </div>
-    <div>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 500 }} aria-label="simple table">
           <TableHead>

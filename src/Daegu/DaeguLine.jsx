@@ -91,7 +91,7 @@ class DaeguLine extends React.Component {
     let xScale = d3
       .scaleTime()
       .domain(d3.extent(data[0].values, (d) => d.date))
-      .range([0, 590]);
+      .range([0, 580]);
 
     let yScale = d3
       .scaleLinear()
@@ -132,14 +132,14 @@ class DaeguLine extends React.Component {
       .on("click", (d, i) => {
         if (i.name === "코로나 전") {
           if (cl) {
-            d3.select(".aaa").remove();
+            d3.select(".aa").remove();
             cl = true;
             Before();
           } else Before();
           cl = true;
         } else if (i.name === "코로나 후") {
           if (cl) {
-            d3.select(".aaa").remove();
+            d3.select(".aa").remove();
             cl = true;
             After();
           } else After();
@@ -266,7 +266,7 @@ function Before() {
     0, 0, 0, 0, 0, 0, 0, 0, 0,
   ];
   let culture = [
-    18332, 26155, 53895, 47956, 27099, 50468, 14709, 51840, 53650, 72780, 48129,
+    18332, 25905, 53895, 47956, 27099, 50468, 14709, 51840, 53650, 72780, 48129,
     33977, 48708, 42792, 52934, 48454, 52545, 51714, 90206, 86276, 78380,
     110218, 95838, 92532,
   ];
@@ -357,7 +357,7 @@ function Before() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
   let yScale = d3
     .scaleLinear()
@@ -370,7 +370,7 @@ function Before() {
   let svg = d3
     .select("#Before_After1")
     .append("svg")
-    .attr("class", "aaa")
+    .attr("class", "aa")
     .attr("width", 800 + "px")
     .attr("height", 520 + "px")
     .attr("fill", "none")
@@ -457,7 +457,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 190 + ")")
+    .attr("transform", "translate(" + 590 + "," + 190 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[2])
@@ -466,7 +466,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 415 + ")")
+    .attr("transform", "translate(" + 590 + "," + 415 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])
@@ -475,7 +475,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 450 + ")")
+    .attr("transform", "translate(" + 590 + "," + 450 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])
@@ -611,7 +611,7 @@ function After() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
   let yScale = d3
     .scaleLinear()
@@ -624,7 +624,7 @@ function After() {
   let svg = d3
     .select("#Before_After1")
     .append("svg")
-    .attr("class", "aaa")
+    .attr("class", "aa")
     .attr("width", 800 + "px")
     .attr("height", 520 + "px")
     .attr("fill", "none")
@@ -711,7 +711,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 230 + ")")
+    .attr("transform", "translate(" + 590 + "," + 230 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[2])
@@ -720,7 +720,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 435 + ")")
+    .attr("transform", "translate(" + 590 + "," + 435 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])
@@ -729,7 +729,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 450 + ")")
+    .attr("transform", "translate(" + 590 + "," + 450 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])

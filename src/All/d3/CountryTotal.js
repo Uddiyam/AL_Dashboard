@@ -1,14 +1,13 @@
-import CountryBeforeTable from "../table/before/CountryBeforeTable";
-import CountryBefore from "./CountryBefore";
+import React, { useState } from "react";
+import CountrySearch from "./before/search/CountrySearch";
+import CountryVisit from "./before/visit/CountryVisit";
 import "../../grap.css";
 
-
-
 export default function CountryTotal() {
-    return (
-      <div>
-        <div className="country_grap"><CountryBefore /></div>
-        <div className="box"><CountryBeforeTable /></div>
-      </div>
-    );
-  }
+  return (
+    <>
+      <div><CountrySearch /></div>
+      <div><CountryVisit /></div>
+    </>
+  );
+}

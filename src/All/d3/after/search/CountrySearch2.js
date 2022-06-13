@@ -1,41 +1,24 @@
 import * as d3 from "d3";
 import React, { Component } from 'react';
-import visit_data from "./전국방문_후기준.csv";
-import search_data from "./전국검색_후기준.csv";
+import input_data from "../../전국검색_후기준.csv";
 
-class ContryAfter extends React.Component {
-    /*
-    constructor(props) {
-        super(props);
-        this.state = { check: props }
-    }
-    */
+class CountrySearch2 extends React.Component {
     componentDidMount() {
-        this.barChart(visit_data);
-    }
-    onClick = () => {
-        d3.select(".test").remove();
-        this.barChart(search_data);
-    }
-
-    onClick2 = () => {
-        d3.select(".test").remove();
-        this.barChart(visit_data);
+        this.barChart();
     }
     render() {
 
         return (
             <div>
-                <button onClick={this.onClick}>검색건수</button>
-                <button onClick={this.onClick2}>방문자수</button>
+                <h3 style={{marginLeft:'10px'}}>검색건수</h3>
                 <div id="my_dataviz"></div>
             </div>
         );
     }
-    barChart(check) {
-        const margin = { top: 20, right: 30, bottom: 80, left: 80 },
-            width = 560 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+    barChart() {
+        const margin = { top: 20, right: 30, bottom: 80, left: 50 },
+            width = 460 - margin.left - margin.right,
+            height = 450 - margin.top - margin.bottom;
 
         // append the svg object to the body of the page
         const svg = d3.select("#my_dataviz")
@@ -47,7 +30,7 @@ class ContryAfter extends React.Component {
             .attr("transform", `translate(${margin.left},${margin.top})`);
 
         // Parse the Data
-        d3.csv(check).then(function (data) {
+        d3.csv(input_data).then(function (data) {
 
             // List of subgroups = header of the csv files = soil condition here
             const subgroups = data.columns.slice(1)
@@ -111,4 +94,4 @@ class ContryAfter extends React.Component {
     }
 }
 
-export default ContryAfter;
+export default CountrySearch2;

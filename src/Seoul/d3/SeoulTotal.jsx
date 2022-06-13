@@ -1,11 +1,11 @@
 import SeoulSearch from "./before/search/SeoulSearch";
 import SeoulVisit from "./before/visit/SeoulVisit";
 import "../../grap.css";
-import SeoulBeforeTable from "../table/before/SeoulBeforeTable";
+import SeoulBar from "../../BarChart/SeoulBar";
 
 export default function SeoulTotal() {
   return (
-    <div className="grap_wrap">
+    <>
       <div className="grap">
         <SeoulSearch />
       </div>
@@ -13,8 +13,8 @@ export default function SeoulTotal() {
         <SeoulVisit />
       </div>
       <div className="box">
-        <SeoulBeforeTable />
+        <SeoulBar />
       </div>
-    </div>
+    </>
   );
 }

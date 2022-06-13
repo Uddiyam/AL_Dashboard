@@ -63,7 +63,7 @@ class Korea extends React.Component {
     ];
 
     let before5 = [
-      669641, 600817, 769283, 907919, 1220718, 1038716, 596203, 699277, 774753,
+      669641, 590817, 769283, 907919, 1220718, 1038716, 596203, 699277, 774753,
       829356, 691846, 461216, 574108, 625113, 734885, 835448, 910152, 712538,
       734325, 855111, 672784, 980455, 964800, 707390,
     ];
@@ -180,7 +180,7 @@ class Korea extends React.Component {
     let xScale = d3
       .scaleTime()
       .domain(d3.extent(data[0].values, (d) => d.date))
-      .range([0, 590]);
+      .range([0, 580]);
 
     let yScale = d3
       .scaleLinear()
@@ -191,7 +191,7 @@ class Korea extends React.Component {
     let svg = d3
       .select("#chart")
       .append("svg")
-      .attr("width", 1000 + "px")
+      .attr("width", 800 + "px")
       .attr("height", 500 + "px")
       .attr("fill", "none")
       .append("g")
@@ -302,7 +302,7 @@ class Korea extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 600 + "," + 350 + ")")
+      .attr("transform", "translate(" + 590 + "," + 350 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "blue")
@@ -311,7 +311,7 @@ class Korea extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 600 + "," + 220 + ")")
+      .attr("transform", "translate(" + 590 + "," + 220 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "red")
@@ -334,7 +334,7 @@ class Korea extends React.Component {
       .append("text")
       .style("font-size", "2em")
       .attr("y", 15)
-      .attr("x", 450)
+      .attr("x", 400)
       .attr("fill", "#000")
       .text("전체 관광객 수");
     svg
@@ -425,7 +425,7 @@ function Before() {
     400579, 661171, 305284, 590035, 354809, 261997,
   ];
   let tourism5 = [
-    2755626, 1960045, 1805702, 2628939, 3394957, 2872351, 3317767, 3796339,
+    2755626, 1959045, 1805702, 2628939, 3394957, 2872351, 3317767, 3796339,
     2831314, 4042309, 2608356, 2584464, 3168483, 2578804, 2098182, 2251798,
     3036138, 2943618, 2976875, 4110372, 2463872, 4079748, 2446619, 2449003,
   ];
@@ -564,7 +564,7 @@ function Before() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
   let yScale = d3
     .scaleLinear()
@@ -664,7 +664,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 210 + ")")
+    .attr("transform", "translate(" + 590 + "," + 210 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[2])
@@ -673,7 +673,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 415 + ")")
+    .attr("transform", "translate(" + 590 + "," + 415 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])
@@ -682,7 +682,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 430 + ")")
+    .attr("transform", "translate(" + 590 + "," + 430 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])
@@ -705,7 +705,7 @@ function Before() {
     .append("text")
     .style("font-size", "2em")
     .attr("y", 15)
-    .attr("x", 450)
+    .attr("x", 400)
     .attr("fill", "#000")
     .text("시기별 관광객 수");
 
@@ -822,7 +822,7 @@ function After() {
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ];
   let natural7 = [
-    1482, 2330, 5049, 6011, 17806, 7800, 17200, 8400, 4600, 13000, 8200, 4400,
+    1482, 2330, 5049, 6011, 17806, 7800, 17200, 8400, 4590, 13000, 8200, 4400,
     7000, 9900, 10200, 14400, 18000, 20170, 13166, 17838, 16280, 23617, 19002,
     12405,
   ];
@@ -940,7 +940,7 @@ function After() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
   let yScale = d3
     .scaleLinear()
@@ -1040,7 +1040,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 280 + ")")
+    .attr("transform", "translate(" + 590 + "," + 280 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[2])
@@ -1049,7 +1049,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 420 + ")")
+    .attr("transform", "translate(" + 590 + "," + 420 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])
@@ -1058,7 +1058,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 405 + ")")
+    .attr("transform", "translate(" + 590 + "," + 405 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])
@@ -1081,7 +1081,7 @@ function After() {
     .append("text")
     .style("font-size", "2em")
     .attr("y", 15)
-    .attr("x", 450)
+    .attr("x", 400)
     .attr("fill", "#000")
     .text("시기별 관광객 수");
 

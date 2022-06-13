@@ -44,6 +44,8 @@ function SeoulVisit() {
             svg.selectAll("rect")
                 .data(data)
                 .join("rect")
+                .transition()
+                .duration(1000)
                 .attr("x", d => x(d.time))
                 .attr("y", d => y(d['visit']))
                 .attr("width", x.bandwidth())
