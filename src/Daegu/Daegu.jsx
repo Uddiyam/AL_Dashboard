@@ -12,6 +12,8 @@ import DaeguBeforeTable from "./table/before/DaeguBeforeTable";
 import DaeguAfterTable from "./table/after/DaeguAfterTable";
 import { MAIN_DATA } from "../../src/MainData";
 import "../grap.css";
+import DaeguTTBefore from "../TotalTable/DaeguTTBefore";
+import DaeguTTAfter from "../TotalTable/DaeguTTAfter";
 
 export default function Daegu() {
   const [content, setContent] = useState("covidAfter");
@@ -40,8 +42,15 @@ export default function Daegu() {
     covidBefore: <DaeguBeforeTable />,
     covidAfter: <DaeguAfterTable />,
   };
+
+  const selectComponent5 = {
+    covidBefore: <DaeguTTBefore />,
+    covidAfter: <DaeguTTAfter />,
+  };
+
   return (
     <>
+      <div>{content && <div>{selectComponent5[content]}</div>}</div>
       <KoreaMap />
       <div className="btn">
         {MAIN_DATA.map((data) => {

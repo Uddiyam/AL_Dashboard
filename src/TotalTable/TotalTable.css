@@ -7,3 +7,7 @@ div.table {
     margin-left: 400px;
     position: 50%;
 }
+
+.table_name{
+    text-align: center;
+}

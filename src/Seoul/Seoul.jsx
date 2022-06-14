@@ -12,6 +12,8 @@ import SeoulLineBefore from "./Project3_seoul_before/line";
 import SeoulLineAfter from "./Project3_seoul/line";
 import SeoulBeforeTable from "./table/before/SeoulBeforeTable";
 import SeoulAfterTable from "./table/after/SeoulAfterTable";
+import SeoulTTBefore from "../TotalTable/SeoulTTBefore";
+import SeoulTTAfter from "../TotalTable/SeoulTTAfter";
 
 export default function Seoul() {
   const [content, setContent] = useState("covidAfter");
@@ -41,8 +43,13 @@ export default function Seoul() {
     covidAfter: <SeoulAfterTable />,
   };
 
+  const selectComponent5 = {
+    covidBefore: <SeoulTTBefore />,
+    covidAfter: <SeoulTTAfter />,
+  };
   return (
     <>
+      <div>{content && <div>{selectComponent5[content]}</div>}</div>
       <KoreaMap />
       <div className="btn">
         {MAIN_DATA.map((data) => {

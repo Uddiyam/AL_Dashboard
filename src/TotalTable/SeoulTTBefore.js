@@ -19,7 +19,7 @@ const rows = [
 function CountryTTBefore() {
   return (
     <>
-    <div>
+    <div className='table_name'>
       <h3>서울 관람객 관련 정보(코로나 전)</h3>
     </div>
     <div>
@@ -50,7 +50,7 @@ function CountryTTBefore() {
       </TableContainer>
     </div>
     </>
-    
+
   );
 }
 

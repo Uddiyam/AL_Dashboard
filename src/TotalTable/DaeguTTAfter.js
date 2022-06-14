@@ -19,8 +19,8 @@ const rows = [
 function BusanTTBefore() {
   return (
     <>
-    <div>
-      <h3>대구 관람객 관련 정보(코로나 전)</h3>
+    <div className='table_name'>
+      <h3>대구 관람객 관련 정보(코로나 후)</h3>
     </div>
     <div class="table">
       <TableContainer component={Paper}>
@@ -50,7 +50,7 @@ function BusanTTBefore() {
       </TableContainer>
     </div>
     </>
-    
+
   );
 }
 
