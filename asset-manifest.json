@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AL_Dashboard/static/css/main.b14d8bf1.css",
-    "main.js": "/AL_Dashboard/static/js/main.d2cf0107.js",
+    "main.css": "/AL_Dashboard/static/css/main.05cc0ef5.css",
+    "main.js": "/AL_Dashboard/static/js/main.6d281d31.js",
     "static/media/전국방문_전기준.csv": "/AL_Dashboard/static/media/전국방문_전기준.b7b6ff9d2b80921d448f.csv",
     "static/media/전국방문_후기준.csv": "/AL_Dashboard/static/media/전국방문_후기준.5bf16a19c72a6c9f7de4.csv",
     "index.html": "/AL_Dashboard/index.html",
@@ -12,11 +12,11 @@
     "static/media/seoul.csv": "/AL_Dashboard/static/media/seoul.233aa813c9832eaf4c77.csv",
     "static/media/서울.csv": "/AL_Dashboard/static/media/서울.a723c526e4125f7dce7c.csv",
     "static/media/대구.csv": "/AL_Dashboard/static/media/대구.8ba4d4ff3044f6fc50bf.csv",
-    "main.b14d8bf1.css.map": "/AL_Dashboard/static/css/main.b14d8bf1.css.map",
-    "main.d2cf0107.js.map": "/AL_Dashboard/static/js/main.d2cf0107.js.map"
+    "main.05cc0ef5.css.map": "/AL_Dashboard/static/css/main.05cc0ef5.css.map",
+    "main.6d281d31.js.map": "/AL_Dashboard/static/js/main.6d281d31.js.map"
   },
   "entrypoints": [
-    "static/css/main.b14d8bf1.css",
-    "static/js/main.d2cf0107.js"
+    "static/css/main.05cc0ef5.css",
+    "static/js/main.6d281d31.js"
   ]
 }
