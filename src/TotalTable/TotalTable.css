@@ -1,0 +1,9 @@
+div.table {
+    width: 600px;
+    border: 2px solid rgb(41, 41, 41);
+    border-radius: 0.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 400px;
+    position: 50%;
+}

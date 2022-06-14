@@ -13,6 +13,8 @@ import AllBeforeTable from "./table/before/CountryBeforeTable";
 import AllAfterTable from "./table/after/CountryAfterTable";
 import KoreaBar from "../BarChart/KoreaBar";
 import KoreaBar_After from "../BarChart/KoreaBar_After";
+import KoreaTTBefore from "../TotalTable/KoreaTTBefore";
+import KoreaTTAfter from "../TotalTable/KoreaTTAfter";
 
 export default function KoreaAll() {
   const [content, setContent] = useState("covidAfter");
@@ -46,8 +48,14 @@ export default function KoreaAll() {
     covidBefore: <KoreaBar />,
     covidAfter: <KoreaBar_After />,
   };
+  const selectComponent6 = {
+    covidBefore: <KoreaTTBefore />,
+    covidAfter: <KoreaTTAfter />,
+  };
+
   return (
     <>
+      <div>{content && <div>{selectComponent6[content]}</div>}</div>
       <KoreaMap />
       <div className="btn">
         {MAIN_DATA.map((data) => {

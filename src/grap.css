@@ -9,7 +9,8 @@
 .btn{
   text-align:center;
   width:82%;
-  height: 3em;
+  height: 2em;
+  margin-top: -20px;
 }
 .visit{
  margin-top: -495px;
