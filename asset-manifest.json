@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/AL_Dashboard/static/css/main.fe46cadc.css",
-    "main.js": "/AL_Dashboard/static/js/main.b3b20b1f.js",
+    "main.css": "/AL_Dashboard/static/css/main.9193e62b.css",
+    "main.js": "/AL_Dashboard/static/js/main.1597ce04.js",
     "static/media/전국방문_전기준.csv": "/AL_Dashboard/static/media/전국방문_전기준.b7b6ff9d2b80921d448f.csv",
     "static/media/전국방문_후기준.csv": "/AL_Dashboard/static/media/전국방문_후기준.5bf16a19c72a6c9f7de4.csv",
     "index.html": "/AL_Dashboard/index.html",
     "static/media/전국검색_전기준.csv": "/AL_Dashboard/static/media/전국검색_전기준.9b50b25be7435f00a2cf.csv",
     "static/media/전국검색_후기준.csv": "/AL_Dashboard/static/media/전국검색_후기준.be6305e17648a2506d2b.csv",
     "static/media/korea.csv": "/AL_Dashboard/static/media/korea.417b7b424358c8c7ad02.csv",
+    "static/media/Gyeonggi.csv": "/AL_Dashboard/static/media/Gyeonggi.4e6df5f4854aebcb155e.csv",
+    "static/media/Gangwon.csv": "/AL_Dashboard/static/media/Gangwon.f317ea3975dcd63a6354.csv",
     "static/media/Daegu.csv": "/AL_Dashboard/static/media/Daegu.046cfa7a0a53a099f7a6.csv",
     "static/media/seoul.csv": "/AL_Dashboard/static/media/seoul.233aa813c9832eaf4c77.csv",
     "static/media/서울.csv": "/AL_Dashboard/static/media/서울.a723c526e4125f7dce7c.csv",
+    "static/media/강원도.csv": "/AL_Dashboard/static/media/강원도.d7562eed0f72dbba50b9.csv",
     "static/media/대구.csv": "/AL_Dashboard/static/media/대구.8ba4d4ff3044f6fc50bf.csv",
-    "main.fe46cadc.css.map": "/AL_Dashboard/static/css/main.fe46cadc.css.map",
-    "main.b3b20b1f.js.map": "/AL_Dashboard/static/js/main.b3b20b1f.js.map"
+    "static/media/경기도.csv": "/AL_Dashboard/static/media/경기도.8bd4dee9f0f0095808f9.csv",
+    "main.9193e62b.css.map": "/AL_Dashboard/static/css/main.9193e62b.css.map",
+    "main.1597ce04.js.map": "/AL_Dashboard/static/js/main.1597ce04.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe46cadc.css",
-    "static/js/main.b3b20b1f.js"
+    "static/css/main.9193e62b.css",
+    "static/js/main.1597ce04.js"
   ]
 }
