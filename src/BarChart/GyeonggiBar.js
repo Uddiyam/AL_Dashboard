@@ -10,6 +10,7 @@ class GyeonggiBar extends React.Component {
     return (
       <>
       <div className="App">
+      <h3>유형별 코로나 전후 비교</h3>
         <div id="my_dataviz" />
       </div>
       </>
