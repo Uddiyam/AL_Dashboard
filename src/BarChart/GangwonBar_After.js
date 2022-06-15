@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import input_data from "C:/Users/revol/react/term-project/src/Gangwon.csv";
-import ReactDOM from "react-dom";
+import input_data from "./Gangwon.csv";
 import * as d3 from "d3";
-import "./BusanLine.css";
+
 
 
 class GangwonBar_After extends React.Component {
@@ -13,6 +12,7 @@ class GangwonBar_After extends React.Component {
     return (
       <>
       <div className="App">
+      <h3>유형별 코로나 전후 비교</h3>
         <div id="my_dataviz" />
       </div>
       </>
@@ -21,8 +21,8 @@ class GangwonBar_After extends React.Component {
   renderMultiChart() {
  // set the dimensions and margins of the graph
 const margin = {top: 20, right: 30, bottom: 80, left: 80},
-width = 560 - margin.left - margin.right,
-height = 500 - margin.top - margin.bottom;
+width = 460 - margin.left - margin.right,
+height = 450 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#my_dataviz")
@@ -79,6 +79,8 @@ svg.append("g")
 .selectAll("rect")
 .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
 .join("rect")
+.transition()
+.duration(1000)
   .attr("x", d => xSubgroup(d.key))
   .attr("y", d => y(d.value))
   .attr("width", xSubgroup.bandwidth())

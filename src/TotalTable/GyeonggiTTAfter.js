@@ -19,10 +19,10 @@ const rows = [
 function GyeonggiTTAfter() {
   return (
     <>
-    <div>
-      <h3>전국 관람객 관련 정보(코로나 후)</h3>
+    <div className="table_name">
+      <h3>경기 관람객 관련 정보(코로나 후)</h3>
     </div>
-    <div class="table">
+    <div className="table">
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 500 }} aria-label="simple table">
           <TableHead>
@@ -50,7 +50,7 @@ function GyeonggiTTAfter() {
       </TableContainer>
     </div>
     </>
-    
+
   );
 }
 

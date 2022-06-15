@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import input_data from "./Daegu.csv";
 import * as d3 from "d3";
-import "./BusanLine.css";
-
 
 class DaeguBar_After extends React.Component {
   componentDidMount() {
@@ -79,6 +77,8 @@ svg.append("g")
 .selectAll("rect")
 .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
 .join("rect")
+.transition()
+.duration(1000)
   .attr("x", d => xSubgroup(d.key))
   .attr("y", d => y(d.value))
   .attr("width", xSubgroup.bandwidth())

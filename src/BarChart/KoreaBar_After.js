@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import input_data from "./korea.csv";
-import ReactDOM from "react-dom";
 import * as d3 from "d3";
-import "./BusanLine.css";
-
 
 class KoreaBar_After extends React.Component {
   componentDidMount() {
@@ -80,16 +77,14 @@ svg.append("g")
 .selectAll("rect")
 .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
 .join("rect")
+.transition()
+.duration(1000)
   .attr("x", d => xSubgroup(d.key))
   .attr("y", d => y(d.value))
   .attr("width", xSubgroup.bandwidth())
   .attr("height", d => height - y(d.value))
   .attr("fill", d => color(d.key));
-
-
 })
-
-
   }
 }
 

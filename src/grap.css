@@ -18,9 +18,10 @@
 }
 .grap {
     width: 350px;
-    height: 400px;
+    height: 300px;
     display: inline-block;
     margin-left: -30px;
+    vertical-align: top;
   }
   .grap_wrap{
     height: 500px;
@@ -29,6 +30,7 @@
   display: inline-block;
   width: 900px;
 padding:0 10% 0 20%;
+
 }
 .days{
 float:left;

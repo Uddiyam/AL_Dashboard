@@ -80,7 +80,7 @@ class Line_gangwon extends React.Component {
     let xScale = d3
       .scaleTime()
       .domain(d3.extent(data[0].values, (d) => d.date))
-      .range([0, 590]);
+      .range([0, 580]);
 
     let yScale = d3.scaleLinear().domain([0, 350000000000]).range([449, 50]);
 
@@ -88,7 +88,7 @@ class Line_gangwon extends React.Component {
     let svg = d3
       .select("#chart")
       .append("svg")
-      .attr("width", 1000 + "px")
+      .attr("width", 800 + "px")
       .attr("height", 500 + "px")
       .attr("fill", "none")
       .append("g")
@@ -199,7 +199,7 @@ class Line_gangwon extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 600 + "," + 280 + ")")
+      .attr("transform", "translate(" + 590 + "," + 280 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "blue")
@@ -208,7 +208,7 @@ class Line_gangwon extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 600 + "," + 220 + ")")
+      .attr("transform", "translate(" + 590 + "," + 220 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "red")
@@ -231,7 +231,7 @@ class Line_gangwon extends React.Component {
       .append("text")
       .style("font-size", "2em")
       .attr("y", 15)
-      .attr("x", 450)
+      .attr("x", 400)
       .attr("fill", "#000")
       .text("유형별 소비");
     svg
@@ -380,9 +380,9 @@ function Before() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
-  let yScale = d3.scaleLinear().domain([0, 1500000000000]).range([449, 50]);
+  let yScale = d3.scaleLinear().domain([0, 1000000000000]).range([449, 50]);
 
   let color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -477,7 +477,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 270 + ")")
+    .attr("transform", "translate(" + 590 + "," + 235 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "green")
@@ -486,7 +486,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 100 + ")")
+    .attr("transform", "translate(" + 590 + "," + 140 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "purple")
@@ -495,7 +495,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 402 + ")")
+    .attr("transform", "translate(" + 625 + "," + 425 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "orange")
@@ -504,7 +504,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 427 + ")")
+    .attr("transform", "translate(" + 590 + "," + 440 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "red")
@@ -513,7 +513,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 440 + ")")
+    .attr("transform", "translate(" + 590 + "," + 450 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "skyblue")
@@ -522,7 +522,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 418 + ")")
+    .attr("transform", "translate(" + 590 + "," + 425 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "brown")
@@ -695,9 +695,9 @@ function After() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
-  let yScale = d3.scaleLinear().domain([0, 1400000000000]).range([449, 50]);
+  let yScale = d3.scaleLinear().domain([0, 180000000000]).range([449, 50]);
 
   let color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -792,7 +792,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 295 + ")")
+    .attr("transform", "translate(" + 590 + "," + 385 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "green")
@@ -801,7 +801,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 230 + ")")
+    .attr("transform", "translate(" + 590 + "," + 273 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "purple")
@@ -810,7 +810,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 432 + ")")
+    .attr("transform", "translate(" + 625 + "," + 450 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "orange")
@@ -819,7 +819,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 440 + ")")
+    .attr("transform", "translate(" + 590 + "," + 412 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "red")
@@ -828,7 +828,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 450 + ")")
+    .attr("transform", "translate(" + 590 + "," + 450 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "skyblue")
@@ -837,7 +837,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 615 + "," + 423 + ")")
+    .attr("transform", "translate(" + 590 + "," + 395 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "brown")

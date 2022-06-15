@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import input_data from "./seoul.csv";
-import ReactDOM from "react-dom";
 import * as d3 from "d3";
-import "./BusanLine.css";
-
 
 class SeoulBar_After extends React.Component {
   componentDidMount() {

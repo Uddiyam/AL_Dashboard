@@ -1,8 +1,6 @@
 import React from "react";
-import input_data from "C:/Users/revol/react/term-project/src/Gyeonggi.csv";
+import input_data from "./Gyeonggi.csv";
 import * as d3 from "d3";
-import "./BusanLine.css";
-
 
 class GyeonggiBar extends React.Component {
   componentDidMount() {
@@ -78,6 +76,8 @@ svg.append("g")
 .selectAll("rect")
 .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
 .join("rect")
+.transition()
+.duration(1000)
   .attr("x", d => xSubgroup(d.key))
   .attr("y", d => y(d.value))
   .attr("width", xSubgroup.bandwidth())
