@@ -3,7 +3,6 @@ import GangwonLine from "./GangwonLine";
 import Line_gangwon from "./Line_gangwon";
 import "../grap.css";
 import React, { useState } from "react";
-import { MAIN_DATA } from "../../src/MainData";
 import GangwonTotal from "./GangwonTotal";
 import GangwonTotal2 from "./GangwonTotal2";
 import GangwonStayBefore from "./Project1_gangwon_before/Main";
@@ -17,10 +16,57 @@ import GangwonTTAfter from "../TotalTable/GangwonTTAfter";
 
 export default function Gangwon() {
   const [content, setContent] = useState("covidAfter");
+  const [click_Before, setClick_Before] = useState({
+    info: {
+      color: "black",
+      backcolor: "white",
+    },
+  });
+  const [click_After, setClick_After] = useState({
+    info: {
+      color: "white",
+      backcolor: "#084B8A",
+    },
+  });
 
   const onClick = (e) => {
     const { name } = e.target;
     setContent(name);
+    if (e.target.name === "covidBefore") {
+      setClick_Before((prevState) => ({
+        ...prevState,
+        info: {
+          ...prevState.info,
+          color: "white",
+          backcolor: "#DF3A01",
+        },
+      }));
+      setClick_After((prevState) => ({
+        ...prevState,
+        info: {
+          ...prevState.info,
+          color: "black",
+          backcolor: "white",
+        },
+      }));
+    } else {
+      setClick_Before((prevState) => ({
+        ...prevState,
+        info: {
+          ...prevState.info,
+          color: "black",
+          backcolor: "white",
+        },
+      }));
+      setClick_After((prevState) => ({
+        ...prevState,
+        info: {
+          ...prevState.info,
+          color: "white",
+          backcolor: "#084B8A",
+        },
+      }));
+    }
   };
 
   const selectComponent1 = {
@@ -52,13 +98,28 @@ export default function Gangwon() {
       <div>{content && <div>{selectComponent5[content]}</div>}</div>
       <KoreaMap />
       <div className="btn">
-        {MAIN_DATA.map((data) => {
-          return (
-            <button onClick={onClick} name={data.name} key={data.id}>
-              {data.text}
-            </button>
-          );
-        })}
+        <button
+          onClick={onClick}
+          name="covidBefore"
+          key="1"
+          style={{
+            color: click_Before.info.color,
+            backgroundColor: click_Before.info.backcolor,
+          }}
+        >
+          코로나 전
+        </button>
+        <button
+          onClick={onClick}
+          name="covidAfter"
+          key="2"
+          style={{
+            color: click_After.info.color,
+            backgroundColor: click_After.info.backcolor,
+          }}
+        >
+          코로나 후
+        </button>
       </div>
       <div className="days">
         {content && <div>{selectComponent2[content]}</div>}

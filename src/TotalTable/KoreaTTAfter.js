@@ -20,7 +20,7 @@ function KoreaTTAfter() {
   return (
     <>
     <div className='table_name'>
-      <h3 align= "center">전국 관람객 관련 정보(코로나 후)</h3>
+      <h3>전국 관람객 관련 정보(코로나 후)</h3>
     </div>
     <div className="table">
       <TableContainer component={Paper}>

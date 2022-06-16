@@ -2,7 +2,7 @@ import * as d3 from "d3";
 import { useEffect, useRef} from "react";
 import input_data from "./경기도.csv";
 
-function GyeonggiSearch2() {
+function GyeonggiSearch() {
   //const [mydata, setMydata] = useState([82199741,1.28E+09]);
   const svgRef = useRef();
 
@@ -50,17 +50,17 @@ function GyeonggiSearch2() {
                 .attr("y", d => y(d['search']))
                 .attr("width", x.bandwidth())
                 .attr("height", d => height - y(d['search']))
-                //.style("fill", function(d){ if(d.time=='코로나 전'){return "#DF3A01"} else {return "#A4A4A4"}}); //코로나 전일때
-                .style("fill", function (d) { if (d.time == '코로나 후') { return "#084B8A" } else { return "#A4A4A4" } });    //코로나 후일때
+                .style("fill", function(d){ if(d.time=='코로나 전'){return "#DF3A01"} else {return "#A4A4A4"}}); //코로나 전일때
+                //.style("fill", function (d) { if (d.time == '코로나 후') { return "#084B8A" } else { return "#A4A4A4" } });    //코로나 후일때
         })
   }, []);
 
   return (
     <div>
       <h3 align= "center">검색건수</h3>
-      <svg ref={svgRef} width={300} height={460}></svg>
+      <svg ref={svgRef} width={300} height={350}></svg>
     </div>
   );
 }
 
-export default GyeonggiSearch2;
+export default GyeonggiSearch;

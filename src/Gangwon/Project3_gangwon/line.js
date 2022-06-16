@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import {GraphGangwonAfter} from "./LineChart";
 
 export default function GangwonAfter() {
-  const [colors, setColors]=useState(['gray','blue']);
+  const [colors, setColors]=useState(['gray','#084B8A']);
   const data1 = [
     {
       name: "1",
@@ -108,12 +108,6 @@ export default function GangwonAfter() {
     },
   ];
 
-  const prev = () =>{
-    setColors(['red','gray']);
-  }
-  const next = () =>{
-    setColors(['gray','blue']);
-  }
   return (
     <div className="Line_Wrap">
       <h3>체류시간</h3>

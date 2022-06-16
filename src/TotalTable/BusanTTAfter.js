@@ -19,7 +19,7 @@ const rows = [
 function BusanTTAfter() {
   return (
     <>
-    <div>
+    <div className='table_name'>
       <h3>부산 관람객 관련 정보(코로나 후)</h3>
     </div>
     <div class="table">
@@ -50,7 +50,7 @@ function BusanTTAfter() {
       </TableContainer>
     </div>
     </>
-    
+
   );
 }
 

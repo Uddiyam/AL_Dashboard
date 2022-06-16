@@ -13,16 +13,16 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(502374300,370000000,"10%"),
+  createData(43170928,81514879,"29%"),
 ];
 
-function CountryTTBefore() {
+function GangwonTTBefore() {
   return (
     <>
     <div className='table_name'>
       <h3>강원 관람객 관련 정보(코로나 전)</h3>
     </div>
-    <div className="table">
+    <div class="table">
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 500 }} aria-label="simple table">
           <TableHead>
@@ -54,4 +54,4 @@ function CountryTTBefore() {
   );
 }
 
-export default CountryTTBefore;
+export default GangwonTTBefore;

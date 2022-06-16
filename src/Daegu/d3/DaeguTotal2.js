@@ -1,5 +1,5 @@
-import DaeguSearch2 from "./after/search/DaeguSearch2"
-import DaeguVisit2 from "./after/visit/DaeguVisit2";
+import DaeguSearch2 from "./data/DaeguSearch2"
+import DaeguVisit2 from "./data/DaeguVisit2";
 import "../../grap.css";
 import DaeguBar_After from "../../BarChart/DaeguBar_After";
 

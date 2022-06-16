@@ -13,14 +13,14 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(25869361,20591210,"7%"),
+  createData(45382353,7664147,"3%"),
 ];
 
-function BusanTTBefore() {
+function IncheonTTAfter() {
   return (
     <>
-    <div>
-      <h3>전국 관람객 관련 정보(코로나 전)</h3>
+    <div className='table_name'>
+      <h3>인천 관람객 관련 정보(코로나 후)</h3>
     </div>
     <div class="table">
       <TableContainer component={Paper}>
@@ -50,8 +50,8 @@ function BusanTTBefore() {
       </TableContainer>
     </div>
     </>
-    
+
   );
 }
 
-export default BusanTTBefore;
+export default IncheonTTAfter;

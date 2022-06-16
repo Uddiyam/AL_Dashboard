@@ -1,4 +1,4 @@
-.table {
+div.table {
     width: 600px;
     border: 2px solid rgb(41, 41, 41);
     border-radius: 0.5rem;
@@ -7,7 +7,6 @@
     margin-left: 400px;
     position: 50%;
 }
-
 .table_name{
     text-align: center;
 }

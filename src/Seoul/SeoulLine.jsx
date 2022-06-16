@@ -102,7 +102,7 @@ class Seoul extends React.Component {
     let svg = d3
       .select("#chart")
       .append("svg")
-      .attr("width", 1000 + "px")
+      .attr("width", 800 + "px")
       .attr("height", 500 + "px")
       .attr("fill", "none")
       .append("g")
@@ -213,7 +213,7 @@ class Seoul extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 600 + "," + 360 + ")")
+      .attr("transform", "translate(" + 590 + "," + 360 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "blue")
@@ -222,7 +222,7 @@ class Seoul extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 600 + "," + 170 + ")")
+      .attr("transform", "translate(" + 590 + "," + 170 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "red")
@@ -465,7 +465,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 280 + ")")
+    .attr("transform", "translate(" + 590 + "," + 290 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])

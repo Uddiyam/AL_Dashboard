@@ -6,18 +6,18 @@ export default function Main({ color }) {
   const [color_, setColor] = useState(color);
 
   useEffect(() => {
-    setColor("black");
+    setColor("#D4B9F9");
     return () => {
-      setColor("black");
+      setColor("#D4B9F9");
     };
   }, [color]);
 
   const onClick = (e) => {
     e.preventDefault();
-    setColor("black");
+    setColor("#D4B9F9");
     document.getElementById(e.target.name).style.fill = color_;
-    e.target.style.color = "white";
-    e.target.style.backgroundColor = "black";
+    e.target.style.color = "black";
+    e.target.style.backgroundColor = "#D4B9F9";
   };
   return (
     <>

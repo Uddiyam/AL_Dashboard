@@ -58,7 +58,7 @@ function GyeonggiSearch2() {
   return (
     <div>
       <h3 align= "center">검색건수</h3>
-      <svg ref={svgRef} width={300} height={460}></svg>
+      <svg ref={svgRef} width={300} height={350}></svg>
     </div>
   );
 }

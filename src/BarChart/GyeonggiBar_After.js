@@ -2,7 +2,7 @@ import React from "react";
 import input_data from "./Gyeonggi.csv";
 import * as d3 from "d3";
 
-class GyeonggiBar extends React.Component {
+class GyeonggiBar_After extends React.Component {
   componentDidMount() {
     this.renderMultiChart();
   }
@@ -66,7 +66,7 @@ const xSubgroup = d3.scaleBand()
 // color palette = one color per subgroup
 const color = d3.scaleOrdinal()
 .domain(subgroups)
-.range(['#DF3A01', '#A4A4A4'])
+.range(['#A4A4A4','#084B8A'])
 
 // Show the bars
 svg.append("g")
@@ -92,4 +92,4 @@ svg.append("g")
   }
 }
 
-export default GyeonggiBar;
+export default GyeonggiBar_After;

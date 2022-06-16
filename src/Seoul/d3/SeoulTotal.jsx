@@ -1,5 +1,5 @@
-import SeoulSearch from "./before/search/SeoulSearch";
-import SeoulVisit from "./before/visit/SeoulVisit";
+import SeoulSearch from "./SeoulSearch";
+import SeoulVisit from "./SeoulVisit";
 import "../../grap.css";
 import SeoulBar from "../../BarChart/SeoulBar";
 

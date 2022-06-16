@@ -383,7 +383,7 @@ function Before() {
     .domain(d3.extent(data[0].values, (d) => d.date))
     .range([0, 580]);
 
-  let yScale = d3.scaleLinear().domain([0, 1500000000000]).range([449, 50]);
+  let yScale = d3.scaleLinear().domain([0, 360000000000]).range([449, 50]);
 
   let color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -478,7 +478,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 270 + ")")
+    .attr("transform", "translate(" + 590 + "," + 170 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "green")
@@ -487,7 +487,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 100 + ")")
+    .attr("transform", "translate(" + 590 + "," + 130 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "purple")
@@ -496,7 +496,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 402 + ")")
+    .attr("transform", "translate(" + 590 + "," + 437 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "orange")
@@ -514,7 +514,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 440 + ")")
+    .attr("transform", "translate(" + 590 + "," + 450 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "skyblue")
@@ -698,7 +698,7 @@ function After() {
     .domain(d3.extent(data[0].values, (d) => d.date))
     .range([0, 580]);
 
-  let yScale = d3.scaleLinear().domain([0, 1400000000000]).range([449, 50]);
+  let yScale = d3.scaleLinear().domain([0, 220000000000]).range([449, 50]);
 
   let color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -793,7 +793,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 295 + ")")
+    .attr("transform", "translate(" + 590 + "," + 115 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "green")
@@ -802,7 +802,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 230 + ")")
+    .attr("transform", "translate(" + 590 + "," + 160 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", "purple")
@@ -811,7 +811,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 432 + ")")
+    .attr("transform", "translate(" + 590 + "," + 440 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "orange")
@@ -820,7 +820,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 440 + ")")
+    .attr("transform", "translate(" + 590 + "," + 429 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "red")
@@ -838,7 +838,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 423 + ")")
+    .attr("transform", "translate(" + 590 + "," + 420 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", "brown")

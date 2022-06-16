@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import input_data from "C:/Users/revol/react/term-project/src/busan.csv";
+import input_data from "./busan.csv";
 import * as d3 from "d3";
-import "./BusanLine.css";
-
 
 class BusanBar extends React.Component {
   componentDidMount() {
@@ -12,6 +10,7 @@ class BusanBar extends React.Component {
     return (
       <>
       <div className="App">
+      <h3>유형별 코로나 전후 비교</h3>
         <div id="my_dataviz" />
       </div>
       </>

@@ -66,7 +66,7 @@ const xSubgroup = d3.scaleBand()
 // color palette = one color per subgroup
 const color = d3.scaleOrdinal()
 .domain(subgroups)
-.range(['#A4A4A4', 'blue'])
+.range(['#A4A4A4', '#084B8A'])
 
 // Show the bars
 svg.append("g")

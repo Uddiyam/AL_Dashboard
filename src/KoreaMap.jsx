@@ -5,7 +5,7 @@ import "./App";
 import React, { useState } from "react";
 
 export default function KoreaMap() {
-  const [color, setColor] = useState("antiquewhite");
+  const [color, setColor] = useState("#7787C2");
 
   return (
     <>

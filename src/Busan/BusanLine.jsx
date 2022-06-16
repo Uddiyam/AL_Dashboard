@@ -129,14 +129,14 @@ class BusanLine extends React.Component {
       .on("click", (d, i) => {
         if (i.name === "코로나 전") {
           if (cl) {
-            d3.select(".aaa").remove();
+            d3.select(".aa").remove();
             cl = true;
             Before();
           } else Before();
           cl = true;
         } else if (i.name === "코로나 후") {
           if (cl) {
-            d3.select(".aaa").remove();
+            d3.select(".aa").remove();
             cl = true;
             After();
           } else After();
@@ -362,7 +362,7 @@ function Before() {
   let svg = d3
     .select("#Before_After1")
     .append("svg")
-    .attr("class", "aaa")
+    .attr("class", "aa")
     .attr("width", 800 + "px")
     .attr("height", 520 + "px")
     .attr("fill", "none")
@@ -449,7 +449,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 180 + ")")
+    .attr("transform", "translate(" + 590 + "," + 185 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[2])
@@ -458,7 +458,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 448 + ")")
+    .attr("transform", "translate(" + 590 + "," + 452 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])
@@ -467,7 +467,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 430 + ")")
+    .attr("transform", "translate(" + 590 + "," + 447 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])
@@ -612,7 +612,7 @@ function After() {
   let svg = d3
     .select("#Before_After1")
     .append("svg")
-    .attr("class", "aaa")
+    .attr("class", "aa")
     .attr("width", 800 + "px")
     .attr("height", 520 + "px")
     .attr("fill", "none")
@@ -717,7 +717,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 430 + ")")
+    .attr("transform", "translate(" + 590 + "," + 440 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])

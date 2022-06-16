@@ -160,22 +160,6 @@ export const D3BarGraph = () => {
     방문자2: "#000000"
 });
 
-  const prev = () =>{
-    setColors({
-      숙박방문자1: "#F5A9BC",
-      방문자1: "red",
-      숙박방문자2: "#A4A4A4",
-      방문자2: "#000000"
-    });
-  }
-  const next = () =>{
-    setColors({
-      숙박방문자1: "#A4A4A4",
-      방문자1: "#000000",
-      숙박방문자2: "#8181F7",
-      방문자2: "#0000ee"
-    });
-  }
   return (
     <div className="days">
     <h3>숙박시간</h3>

@@ -13,14 +13,14 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(25869361,20591210,"7%"),
+  createData(59064195,51554974,"20%"),
 ];
 
-function BusanTTBefore() {
+function GangwonTTAfter() {
   return (
     <>
     <div className='table_name'>
-      <h3>전국 관람객 관련 정보(코로나 전)</h3>
+      <h3>강원 관람객 관련 정보(코로나 후)</h3>
     </div>
     <div class="table">
       <TableContainer component={Paper}>
@@ -54,4 +54,4 @@ function BusanTTBefore() {
   );
 }
 
-export default BusanTTBefore;
+export default GangwonTTAfter;

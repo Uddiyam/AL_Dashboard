@@ -16,7 +16,7 @@ const rows = [
   createData(82199741,53655902,"4%"),
 ];
 
-function CountryTTBefore() {
+function SeoulTTBefore() {
   return (
     <>
     <div className='table_name'>
@@ -54,4 +54,4 @@ function CountryTTBefore() {
   );
 }
 
-export default CountryTTBefore;
+export default SeoulTTBefore;

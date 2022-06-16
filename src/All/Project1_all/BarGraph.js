@@ -81,21 +81,9 @@ export const AllBarAfter = () => {
   const [keys, setKeys] = useState(allKeys);
   const [colors, setColors] =useState({
       방문자1: "#000000",
-    방문자2: "#0000ee"
+    방문자2: "#084B8A"
   });
 
-  const prev = () =>{
-    setColors({
-      방문자1: "red",
-      방문자2: "#000000"
-    });
-  }
-  const next = () =>{
-    setColors({
-      방문자1: "#000000",
-      방문자2: "#0000ee"
-    });
-  }
   return (
     <div className="Bar_Time">
     <h3>숙박시간</h3>

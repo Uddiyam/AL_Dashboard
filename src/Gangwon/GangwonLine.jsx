@@ -102,7 +102,7 @@ class GangwonLine extends React.Component {
     let svg = d3
       .select("#chart")
       .append("svg")
-      .attr("width", 1000 + "px")
+      .attr("width", 800 + "px")
       .attr("height", 500 + "px")
       .attr("fill", "none")
       .append("g")
@@ -213,7 +213,7 @@ class GangwonLine extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 590 + "," + 330 + ")")
+      .attr("transform", "translate(" + 580 + "," + 330 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "blue")
@@ -222,7 +222,7 @@ class GangwonLine extends React.Component {
     lines
       .append("text")
       .style("font-size", "0.8em")
-      .attr("transform", "translate(" + 590 + "," + 210 + ")")
+      .attr("transform", "translate(" + 580 + "," + 210 + ")")
       .attr("dy", ".500em")
       .attr("text-anchor", "start")
       .style("fill", "red")
@@ -269,7 +269,7 @@ function Before() {
   let natural = [
     129133, 97102, 141046, 226512, 407126, 282751, 344212, 531980, 256391,
     356522, 145707, 150792, 271616, 235893, 210204, 247840, 412989, 399183,
-    400579, 661171, 305284, 590035, 354809, 261997,
+    400579, 661171, 305284, 580035, 354809, 261997,
   ];
   let tourism = [
     2755626, 1960045, 1805702, 2628939, 3394957, 2872351, 3317767, 3796339,
@@ -458,7 +458,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 220 + ")")
+    .attr("transform", "translate(" + 590 + "," + 200 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[2])
@@ -467,7 +467,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 430 + ")")
+    .attr("transform", "translate(" + 590 + "," + 434 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])
@@ -476,7 +476,7 @@ function Before() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 420 + ")")
+    .attr("transform", "translate(" + 590 + "," + 425 + ")")
     .attr("dy", ".530em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[1])
@@ -613,7 +613,7 @@ function After() {
   let xScale = d3
     .scaleTime()
     .domain(d3.extent(data[0].values, (d) => d.date))
-    .range([0, 600]);
+    .range([0, 580]);
 
   let yScale = d3
     .scaleLinear()
@@ -722,7 +722,7 @@ function After() {
   lines
     .append("text")
     .style("font-size", "0.7em")
-    .attr("transform", "translate(" + 590 + "," + 420 + ")")
+    .attr("transform", "translate(" + 590 + "," + 424 + ")")
     .attr("dy", ".500em")
     .attr("text-anchor", "start")
     .style("fill", d3.schemeCategory10[0])

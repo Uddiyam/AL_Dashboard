@@ -13,10 +13,10 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(25869361,20591210,"7%"),
+  createData(25869361,14609181,"8%"),
 ];
 
-function BusanTTBefore() {
+export default function DaeguTTAfter() {
   return (
     <>
     <div className='table_name'>
@@ -53,5 +53,3 @@ function BusanTTBefore() {
 
   );
 }
-
-export default BusanTTBefore;

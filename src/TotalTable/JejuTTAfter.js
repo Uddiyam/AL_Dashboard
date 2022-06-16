@@ -13,16 +13,16 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(25869361,20591210,"7%"),
+  createData(36778973,16146773,"15%"),
 ];
 
-function BusanTTBefore() {
+function JejuTTAfter() {
   return (
     <>
-    <div>
-      <h3>전국 관람객 관련 정보(코로나 전)</h3>
+    <div className='table_name'>
+      <h3>제주 관람객 관련 정보(코로나 후)</h3>
     </div>
-    <div class="table">
+    <div className='table'>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 500 }} aria-label="simple table">
           <TableHead>
@@ -50,8 +50,8 @@ function BusanTTBefore() {
       </TableContainer>
     </div>
     </>
-    
+
   );
 }
 
-export default BusanTTBefore;
+export default JejuTTAfter;

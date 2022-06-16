@@ -13,10 +13,10 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(502374300,370000000,"10%"),
+  createData(208586000,150874250,"12%"),
 ];
 
-function CountryTTBefore() {
+function GyeonggiTTBefore() {
   return (
     <>
     <div className='table_name'>
@@ -54,4 +54,4 @@ function CountryTTBefore() {
   );
 }
 
-export default CountryTTBefore;
+export default GyeonggiTTBefore;

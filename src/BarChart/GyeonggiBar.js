@@ -19,8 +19,8 @@ class GyeonggiBar extends React.Component {
   renderMultiChart() {
  // set the dimensions and margins of the graph
 const margin = {top: 20, right: 30, bottom: 80, left: 80},
-width = 560 - margin.left - margin.right,
-height = 500 - margin.top - margin.bottom;
+width = 460 - margin.left - margin.right,
+height = 450 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#my_dataviz")
@@ -66,7 +66,7 @@ const xSubgroup = d3.scaleBand()
 // color palette = one color per subgroup
 const color = d3.scaleOrdinal()
 .domain(subgroups)
-.range(['#DF3A01', '#A4A4A4'])
+.range(['#DF3A01','#A4A4A4'])
 
 // Show the bars
 svg.append("g")

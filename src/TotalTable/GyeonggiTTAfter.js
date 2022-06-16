@@ -13,16 +13,16 @@ function createData(rank, name, category) {
 }
 
 const rows = [
-  createData(208586000,86644277,"8%"),
+  createData(208586000,86644277,"7%"),
 ];
 
 function GyeonggiTTAfter() {
   return (
     <>
-    <div className="table_name">
+    <div className='table_name'>
       <h3>경기 관람객 관련 정보(코로나 후)</h3>
     </div>
-    <div className="table">
+    <div class="table">
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 500 }} aria-label="simple table">
           <TableHead>

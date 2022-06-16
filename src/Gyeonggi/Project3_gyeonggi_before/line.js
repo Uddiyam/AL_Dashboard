@@ -108,12 +108,6 @@ export default function GyeongiBefore() {
     },
   ];
 
-  const prev = () =>{
-    setColors(['red','gray']);
-  }
-  const next = () =>{
-    setColors(['gray','blue']);
-  }
   return (
     <div className="Line_Wrap">
       <h3>체류시간</h3>
